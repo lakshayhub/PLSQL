@@ -109,6 +109,13 @@ BEGIN
     ✅ FOREIGN KEY can reference one or more columns (composite key).
     ✅ Supports ON DELETE CASCADE and ON DELETE SET NULL for automatic data handling.
     ✅ A table can have multiple foreign keys referencing different parent tables.
+
+
+    In PL/SQL, if a parent table has a FOREIGN KEY reference in another table (child table), 
+    you cannot drop the parent table directly unless you either:
+    Drop the child table first, or
+    Remove the FOREIGN KEY constraint from the child table.
+    
     
     SYNTAX:
     
@@ -138,6 +145,10 @@ BEGIN
     
     INSERT INTO EMPLOYEES
     VALUES(1,'A',2);  -- WILL NOT WORK
+
+    
+
+
     
 Summary Table of Constraints:
 
