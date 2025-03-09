@@ -1,2 +1,2 @@
 # PLSQL
-PLSQL notes and Study Material
+PLSQL Notes and Study Material
